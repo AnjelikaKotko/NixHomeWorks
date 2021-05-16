@@ -1,0 +1,12 @@
+div p:first-child {
+  color: red;
+}
+div p:only-child {
+  color: white;
+}
+div p:only-of-type {
+  background: blue;
+}
+div p:not(p:first-child) {
+  color: blue;
+}
