@@ -1,0 +1,9 @@
+p {
+  word-spacing: 20px;
+}
+p span:first-child {
+  letter-spacing: 5px;
+}
+p span:last-child {
+  text-shadow: 2px 2px 2px red;
+}

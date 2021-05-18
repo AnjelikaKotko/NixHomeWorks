@@ -1,0 +1,7 @@
+div:first-child {
+  height: 100px;
+  width: 100px;
+  background-color: red;
+  border: 2px solid blue;
+  border-radius: 50%;
+}

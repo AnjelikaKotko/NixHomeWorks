@@ -1,0 +1,26 @@
+body {
+  background-image: url(1.jpg);
+}
+p {
+  font-weight: 700;
+  line-height: 1.5em;
+  font-size: 1rem;
+}
+a {
+  color: aliceblue;
+}
+p:first-child {
+  color: #ecbbbb;
+}
+p:nth-child(2) {
+  color: grey;
+}
+p:nth-child(3) {
+  color: rgb(207, 202, 202);
+}
+p:nth-child(4) {
+  color: hsl(0deg, 64%, 71%);
+}
+p:nth-child(5) {
+  color: rgba(55, 54, 54, 0.7);
+}

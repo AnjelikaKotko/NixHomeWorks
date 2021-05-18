@@ -1,0 +1,5 @@
+div:first-child {
+  width: 200px;
+  height: 200px;
+  background: linear-gradient(67.5deg, #0f0, #e68de5 25%, #ff0 95%);
+}

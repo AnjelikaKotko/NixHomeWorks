@@ -1,0 +1,7 @@
+div:first-child {
+  outline: 4px dashed #f00;
+}
+p {
+  outline: double;
+  outline-offset: -5px;
+}

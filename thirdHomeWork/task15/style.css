@@ -1,0 +1,6 @@
+div:first-child {
+  width: 300px;
+  height: 200px;
+  background: url("w3c.jpg") #000 space;
+  background-size: 25%;
+}

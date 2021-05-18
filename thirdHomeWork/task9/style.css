@@ -1,0 +1,6 @@
+div:first-child {
+  border: 4px dashed red;
+}
+p {
+  border-style: double;
+}
