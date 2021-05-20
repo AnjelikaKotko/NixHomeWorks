@@ -1,0 +1,16 @@
+ul {
+  list-style-type: none;
+}
+.second {
+  position: relative;
+}
+.hidden {
+  display: none;
+  background-color: #f00;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.second:hover .hidden {
+  display: inline-block;
+}

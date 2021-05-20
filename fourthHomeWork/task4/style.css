@@ -1,0 +1,17 @@
+.wrapper {
+  background-color: red;
+}
+.wrapper div:first-child {
+  background-color: red;
+  width: 30%;
+  float: left;
+}
+.wrapper div:nth-child(2) {
+  background-color: red;
+  width: 30%;
+  float: right;
+}
+.wrapper div:last-child {
+  margin: 0 30%;
+  background-color: #fff;
+}

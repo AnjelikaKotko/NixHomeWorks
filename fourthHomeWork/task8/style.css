@@ -1,0 +1,29 @@
+div {
+  width: 50px;
+  height: 50px;
+  color: #fff;
+  position: absolute;
+}
+div:nth-child(1) {
+  background-color: #f00;
+  top: 60px;
+  left: 60px;
+}
+div:nth-child(2) {
+  background-color: #0f0;
+  top: 10px;
+  left: 10px;
+}
+div:nth-child(3) {
+  background-color: #00f;
+  top: 10px;
+  left: 60px;
+}
+div:nth-child(4) {
+  background-color: #000;
+  top: 60px;
+  left: 10px;
+}
+hr {
+  margin-top: 130px;
+}

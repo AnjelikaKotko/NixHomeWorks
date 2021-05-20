@@ -1,0 +1,19 @@
+.red {
+  background-color: red;
+}
+.one {
+  margin-right: 20%;
+}
+.two {
+  margin-left: 20%;
+}
+.green {
+  background-color: green;
+  width: 20%;
+}
+.right {
+  float: right;
+}
+.left {
+  float: left;
+}

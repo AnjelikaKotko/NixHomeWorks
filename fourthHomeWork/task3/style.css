@@ -1,0 +1,22 @@
+div {
+  color: #fff;
+}
+.red,
+.black div:nth-child(2) {
+  width: 30%;
+  float: left;
+}
+.green {
+  margin-left: 30%;
+}
+.blue,
+.black div:first-child {
+  width: 30%;
+  float: right;
+}
+.black {
+  margin-right: 30%;
+}
+.black div:last-child {
+  margin: 0 30%;
+}
