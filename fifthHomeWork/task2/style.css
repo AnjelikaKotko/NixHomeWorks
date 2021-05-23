@@ -1,0 +1,39 @@
+div {
+  padding: 5px;
+  border: 2px solid black;
+  margin: 5px;
+}
+.flex-container {
+  display: flex;
+}
+.small {
+  width: 400px;
+}
+.small div {
+  flex-basis: 50px;
+}
+.small .flex-item-1,
+.small .flex-item-3 {
+  flex-grow: 1;
+}
+.small .flex-item-2,
+.small .flex-item-4 {
+  flex-grow: 0;
+}
+.medium {
+  width: 500px;
+}
+.medium div {
+  flex-grow: 1;
+}
+.big {
+  width: 600px;
+}
+.big .flex-item-1,
+.big .flex-item-2 {
+  flex-grow: 1;
+}
+.big .flex-item-3,
+.big .flex-item-4 {
+  flex-grow: 2;
+}
