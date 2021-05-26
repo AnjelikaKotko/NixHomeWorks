@@ -1,0 +1,48 @@
+.smoking {
+  h2 {
+    @include heading;
+  }
+  .list-wrap {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    .list-item {
+      padding: 15px;
+      width: 25%;
+      img {
+        width: 100%;
+        margin-bottom: 20px;
+      }
+      div {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+        padding: 7px;
+        p {
+          font-size: 0.9em;
+          font-weight: 700;
+        }
+        span {
+          font-size: 0.8em;
+          color: lighten($grey-color, 30%);
+        }
+        .price {
+          font-weight: 700;
+        }
+        i:hover {
+          color: red;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 991px) {
+  .smoking .list-wrap .list-item {
+    width: 50%;
+  }
+}
+@media (max-width: 575px) {
+  .smoking .list-wrap .list-item {
+    width: 100%;
+  }
+}

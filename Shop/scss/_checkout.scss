@@ -1,0 +1,44 @@
+.checkout {
+  h2 {
+    @include heading;
+  }
+  form {
+    max-width: 700px;
+    padding: 15px;
+    margin: 0 auto;
+    label,
+    input,
+    select {
+      display: block;
+      width: 100%;
+    }
+    input,
+    select {
+      padding: 5px;
+      border: 2px solid lighten($grey-color, 20%);
+      border-radius: 5px;
+      margin-bottom: 15px;
+    }
+    select {
+      padding: 7px;
+    }
+    div {
+      display: flex;
+      justify-content: space-between;
+      label {
+        width: 48%;
+      }
+    }
+    button {
+      @include button;
+      border: none;
+      padding: 0 10px;
+      font-weight: normal;
+      transform: translate(-50%);
+      margin: 20px 0 20px 50%;
+    }
+    h6 {
+      margin-bottom: 25px;
+    }
+  }
+}

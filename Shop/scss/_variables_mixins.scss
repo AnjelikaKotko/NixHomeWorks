@@ -1,0 +1,26 @@
+$grey-color: rgb(65, 62, 62);
+$blue-color: rgb(39, 35, 85);
+
+@mixin button {
+  display: inline-block;
+  background-color: $blue-color;
+  color: lighten($grey-color, 60%);
+  min-width: 200px;
+  min-height: 50px;
+  border-radius: 25px;
+  line-height: 50px;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  transition: 150ms;
+  &:hover {
+    background-color: lighten($blue-color, 8%);
+    text-decoration: none;
+  }
+}
+@mixin heading {
+  text-transform: uppercase;
+  text-align: center;
+  margin: 40px 0;
+}

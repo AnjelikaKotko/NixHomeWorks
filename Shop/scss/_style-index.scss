@@ -1,0 +1,99 @@
+.promo {
+  min-height: calc(100vh - 60px);
+  position: relative;
+  top: -5px;
+  &::after {
+    content: "";
+    background: url("../img/Woman.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+    top: 10px;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+  }
+}
+.promo-shop {
+  position: absolute;
+  max-width: 400px;
+  top: 30%;
+  h2,
+  p {
+    margin-bottom: 30px;
+    line-height: 1.5;
+  }
+  h2 {
+    font-size: 2em;
+  }
+  a {
+    @include button;
+  }
+}
+h1 {
+  @include heading;
+}
+@media (max-width: 767px) {
+  .promo {
+    color: darken($grey-color, 100%) !important;
+    &::after {
+      opacity: 0.5;
+    }
+  }
+}
+.about-content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  img {
+    width: 50%;
+  }
+  div {
+    align-self: center;
+    line-height: 1.5;
+    text-align: justify;
+    width: 45%;
+    p {
+      text-indent: 1.5em;
+    }
+    a {
+      @include button;
+      margin-top: 30px;
+    }
+  }
+}
+@media (max-width: 767px) {
+  .about-content {
+    div,
+    img {
+      width: 100%;
+    }
+    img {
+      margin: 0 0 20px;
+    }
+    div a {
+      margin-left: calc(50% - 100px);
+    }
+  }
+}
+.showroom {
+  .img-wrap {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    img {
+      width: 33%;
+      &:first-child,
+      &:last-child {
+        margin-top: 10px;
+      }
+    }
+  }
+}
+@media (max-width: 767px) {
+  .showroom .img-wrap img {
+    width: 100%;
+    margin: 7px 0;
+  }
+}

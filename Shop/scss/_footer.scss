@@ -1,0 +1,26 @@
+footer {
+  box-shadow: 0 1px 10px 0 $grey-color;
+  margin-top: 10px;
+  .container {
+    display: flex;
+    justify-content: space-between;
+    .logo-bottom {
+      text-transform: uppercase;
+    }
+    i {
+      margin-left: 10px;
+    }
+  }
+}
+@media (max-width: 767px) {
+  footer .container {
+    flex-direction: column;
+    text-align: center;
+    div {
+      margin-bottom: 7px;
+    }
+    div:nth-child(2) {
+      order: 2;
+    }
+  }
+}

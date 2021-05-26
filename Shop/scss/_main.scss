@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+body {
+  padding-top: 70px;
+}
+body,
+a {
+  font-family: "Roboto", sans-serif;
+  color: $grey-color;
+}
+a:hover {
+  color: darken($grey-color, 50%);
+  text-decoration: none;
+}
+.container {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 15px;
+}
