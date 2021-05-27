@@ -3,9 +3,7 @@
     @include heading;
   }
   .cart-item {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    @include flexible;
     align-items: center;
     padding: 10px;
     p {
@@ -13,7 +11,7 @@
       text-align: right;
     }
   }
-  .total {
+  .cart-item-total {
     border-top: 2px solid lighten($grey-color, 40%);
     text-align: right;
     padding-top: 10px;
@@ -21,7 +19,7 @@
   }
   a {
     @include button;
-    margin: 20px 0 120px 50%;
+    margin: 20px 0 20px 50%;
     transform: translate(-50%);
   }
 }

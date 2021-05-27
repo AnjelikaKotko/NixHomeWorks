@@ -3,9 +3,7 @@
     @include heading;
   }
   .list-wrap {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    @include flexible;
     .list-item {
       padding: 15px;
       width: 25%;
@@ -14,8 +12,7 @@
         margin-bottom: 20px;
       }
       div {
-        display: flex;
-        justify-content: space-between;
+        @include flexible;
         margin-bottom: 20px;
         padding: 7px;
         p {

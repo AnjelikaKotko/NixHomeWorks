@@ -1,8 +1,8 @@
 .contacts {
   display: flex;
   flex-wrap: wrap;
-  margin: 20px 0;
   text-align: center;
+  margin-bottom: 20px;
   div {
     width: 50%;
     h6 {
@@ -17,9 +17,6 @@
     a {
       margin-bottom: 15px;
     }
-  }
-  .map {
-    margin-top: 20px;
   }
 }
 @media (max-width: 767px) {

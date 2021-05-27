@@ -7,6 +7,9 @@
 }
 
 body {
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
   padding-top: 70px;
 }
 
@@ -80,7 +83,7 @@ nav .logo {
   }
 }
 footer {
-  box-shadow: 0 1px 10px 0 #413e3e;
+  box-shadow: 0 -5px 5px -5px #413e3e;
   margin-top: 10px;
 }
 footer .container {
@@ -220,29 +223,29 @@ h1 {
     margin-left: calc(50% - 100px);
   }
 }
-.showroom .img-wrap {
+.showroom .showroom-img-wrap {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
 }
-.showroom .img-wrap img {
+.showroom .showroom-img-wrap img {
   width: 33%;
 }
-.showroom .img-wrap img:first-child, .showroom .img-wrap img:last-child {
+.showroom .showroom-img-wrap img:first-child, .showroom .showroom-img-wrap img:last-child {
   margin-top: 10px;
 }
 
 @media (max-width: 767px) {
-  .showroom .img-wrap img {
+  .showroom .showroom-img-wrap img {
     width: 100%;
     margin: 7px 0;
   }
 }
 .category {
   display: flex;
-  margin-top: 20px;
-  flex-wrap: wrap;
   justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 20px;
 }
 .category .category-item {
   display: flex;
@@ -320,6 +323,7 @@ h1 {
 .smoking .list-wrap .list-item div {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   margin-bottom: 20px;
   padding: 7px;
 }
@@ -350,9 +354,9 @@ h1 {
 }
 .product-wrap {
   display: flex;
-  margin-top: 20px;
   justify-content: space-between;
   flex-wrap: wrap;
+  margin-top: 20px;
 }
 .product-wrap .product-desc p:first-child {
   margin-top: 20px;
@@ -417,35 +421,36 @@ h1 {
   text-align: center;
   margin: 40px 0;
 }
-.checkout form {
+.checkout .checkout-form {
   max-width: 700px;
   padding: 15px;
   margin: 0 auto;
 }
-.checkout form label,
-.checkout form input,
-.checkout form select {
+.checkout .checkout-form label,
+.checkout .checkout-form input,
+.checkout .checkout-form select {
   display: block;
   width: 100%;
 }
-.checkout form input,
-.checkout form select {
+.checkout .checkout-form input,
+.checkout .checkout-form select {
   padding: 5px;
   border: 2px solid #757070;
   border-radius: 5px;
   margin-bottom: 15px;
 }
-.checkout form select {
+.checkout .checkout-form select {
   padding: 7px;
 }
-.checkout form div {
+.checkout .checkout-form div {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
-.checkout form div label {
+.checkout .checkout-form div label {
   width: 48%;
 }
-.checkout form button {
+.checkout .checkout-form button {
   display: inline-block;
   background-color: #272355;
   color: #d9d8d8;
@@ -464,19 +469,19 @@ h1 {
   transform: translate(-50%);
   margin: 20px 0 20px 50%;
 }
-.checkout form button:hover {
+.checkout .checkout-form button:hover {
   background-color: #342f72;
   text-decoration: none;
 }
-.checkout form h6 {
+.checkout .checkout-form h6 {
   margin-bottom: 25px;
 }
 
 .contacts {
   display: flex;
   flex-wrap: wrap;
-  margin: 20px 0;
   text-align: center;
+  margin-bottom: 20px;
 }
 .contacts div {
   width: 50%;
@@ -495,9 +500,6 @@ h1 {
 .contacts div a {
   margin-bottom: 15px;
 }
-.contacts .map {
-  margin-top: 20px;
-}
 
 @media (max-width: 767px) {
   .contacts div {
@@ -511,8 +513,8 @@ h1 {
 }
 .cart .cart-item {
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
+  flex-wrap: wrap;
   align-items: center;
   padding: 10px;
 }
@@ -520,7 +522,7 @@ h1 {
   width: 20%;
   text-align: right;
 }
-.cart .total {
+.cart .cart-item-total {
   border-top: 2px solid #a8a3a3;
   text-align: right;
   padding-top: 10px;
@@ -539,7 +541,7 @@ h1 {
   font-weight: 700;
   letter-spacing: 0.1em;
   transition: 150ms;
-  margin: 20px 0 120px 50%;
+  margin: 20px 0 20px 50%;
   transform: translate(-50%);
 }
 .cart a:hover {

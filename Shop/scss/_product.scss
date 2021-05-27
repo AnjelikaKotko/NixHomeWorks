@@ -1,8 +1,6 @@
 .product-wrap {
-  display: flex;
+  @include flexible;
   margin-top: 20px;
-  justify-content: space-between;
-  flex-wrap: wrap;
   .product-desc {
     p:first-child {
       margin-top: 20px;

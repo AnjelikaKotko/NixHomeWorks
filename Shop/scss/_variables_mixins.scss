@@ -24,3 +24,8 @@ $blue-color: rgb(39, 35, 85);
   text-align: center;
   margin: 40px 0;
 }
+@mixin flexible {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
