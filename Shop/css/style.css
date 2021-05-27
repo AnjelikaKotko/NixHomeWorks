@@ -178,7 +178,6 @@ h1 {
 .about-content img {
   width: 50%;
   object-fit: cover;
-  height: 100%;
 }
 .about-content div {
   align-self: center;
@@ -255,7 +254,6 @@ h1 {
 .category .category-item img {
   width: 50%;
   margin-right: 10px;
-  height: 100%;
   object-fit: cover;
 }
 .category .category-item div {
@@ -374,7 +372,6 @@ h1 {
 }
 .product-wrap img {
   width: 55%;
-  height: 100%;
   object-fit: cover;
 }
 .product-wrap .product-desc {
