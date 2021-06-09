@@ -1,0 +1,122 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #090420;
+  font-family: sans-serif;
+}
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 15px;
+  min-height: 100vh;
+}
+.modal {
+  height: 100vh;
+  width: 100%;
+  background-color: #090420;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 9000;
+}
+.modal-info {
+  min-width: 500px;
+  min-height: 300px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-color: #7f8bd6;
+  border-radius: 20px;
+  background-color: #d4d5e2;
+  padding: 20px;
+}
+.modal-info h3 {
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 1.5em;
+}
+.modal-info li {
+  list-style: none;
+  margin-bottom: 10px;
+}
+.modal-info a {
+  color: black;
+  text-decoration: none;
+  font-size: 1.3em;
+}
+.modal-info li:hover a {
+  color: #3e3955;
+}
+.modal-info .calling {
+  text-align: center;
+  margin-top: 20%;
+}
+.modal-info .call-ans {
+  text-align: center;
+  margin-top: 10%;
+}
+.modal-info button {
+  margin-top: 20%;
+  width: 30%;
+  margin-left: 50%;
+  transform: translate(-50%, -50%);
+}
+button {
+  border-color: #7f8bd6;
+  transition: background-color 0.5s;
+  min-height: 70px;
+  border-radius: 20px;
+  background-color: #d4d5e2;
+}
+button:hover {
+  background-color: #c2c4d2;
+}
+#start {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-transform: uppercase;
+  font-weight: 700;
+  padding: 20px;
+  min-width: 300px;
+}
+.hidden {
+  visibility: hidden;
+}
+.not-active {
+  opacity: 0.4;
+}
+.question {
+  width: 70%;
+  min-height: 100px;
+  margin: 60px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-color: #7f8bd6;
+  border-radius: 20px;
+  background-color: #d4d5e2;
+}
+.btn-container,
+.btn-container-help {
+  width: 70%;
+  min-height: 50%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 30px 30px 0 30px;
+}
+.btn-container button {
+  width: 40%;
+  margin-bottom: 30px;
+}
+.btn-container-help button {
+  width: 20%;
+  margin-top: 20px;
+}
