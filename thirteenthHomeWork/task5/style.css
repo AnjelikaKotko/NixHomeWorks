@@ -1,0 +1,29 @@
+body {
+  height: 2000px;
+  cursor: pointer;
+}
+#field {
+  width: 200px;
+  height: 150px;
+  border: 10px solid black;
+  background-color: #00ff00;
+  overflow: hidden;
+  position: relative;
+}
+#ball {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transition: all 1.5s;
+}
+.animation {
+  animation: 4s ball infinite linear;
+}
+@keyframes ball {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

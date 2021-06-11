@@ -1,0 +1,35 @@
+.menu {
+  margin: 40px;
+  width: 250px;
+}
+.menu .btn {
+  border: 1px solid rgb(145, 176, 233);
+  border-radius: 8px 8px 0 0;
+  background-color: rgb(227, 225, 233);
+  padding: 15px;
+}
+.menu .btn::before {
+  content: "▶ ";
+  font-size: 70%;
+}
+.menu.active .btn::before {
+  content: "▼ ";
+}
+.menu ul {
+  list-style: none;
+  display: none;
+  background-color: rgb(227, 225, 233);
+  border: 1px solid rgb(145, 176, 233);
+  border-radius: 0 0 8px 8px;
+  margin-top: 0;
+}
+.menu.active ul {
+  display: block;
+}
+.menu ul li {
+  padding: 10px 0 5px;
+  border-bottom: 1px solid rgb(145, 176, 233);
+}
+.menu ul li:last-child {
+  border: none;
+}
