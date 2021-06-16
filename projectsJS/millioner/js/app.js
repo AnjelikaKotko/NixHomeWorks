@@ -177,7 +177,6 @@ function createCostsElements() {
 let game = {
   questionNumber: 1,
   cost: 0,
-  fireProofCost: [5, 10, 15],
   start() {
     if (this.questionNumber == 1) {
       document.getElementById("start").remove();

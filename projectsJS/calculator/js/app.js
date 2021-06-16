@@ -10,6 +10,7 @@ let calculator = document.querySelector(".calculator");
 });
 
 let nums = document.querySelectorAll(`button`);
+
 nums.forEach((num) => {
   if ((num.value >= 0 && num.value <= 9) || num.value == ".") {
     num.classList.add("num");
@@ -33,12 +34,19 @@ let result;
 let operator;
 
 function setNum() {
+  if (this.value === "." && currentNumber.includes(".")) {
+    return;
+  }
+  if (currentNumber >= 5) {
+    currentNumber = currentNumber.substring(0, 5);
+  }
   if (result) {
     currentNumber = this.value;
     result = "";
   } else {
     currentNumber += this.value;
   }
+
   output.innerHTML = currentNumber;
 }
 
@@ -72,20 +80,28 @@ function displayNum() {
     default:
       result = currentNumber;
   }
-
-  output.innerHTML = result;
+  if (result === Infinity || result === NaN) {
+    output.innerHTML = "Ошибка";
+    return;
+  } else {
+    output.innerHTML = Math.floor(result * 100) / 100;
+  }
 
   firstNumber = 0;
   currentNumber = result;
 }
-document.querySelector("[value='%']").addEventListener("click", () => {
-  if (operator == "+" || operator == "-") {
-    currentNumber = (currentNumber / 100) * firstNumber;
-  } else if (operator == "*" || operator == "/") {
-    currentNumber = currentNumber / 100;
-  }
-  output.innerHTML = currentNumber;
-});
+
+function calcPercent() {
+  document.querySelector("[value='%']").addEventListener("click", () => {
+    if (operator == "+" || operator == "-") {
+      currentNumber = (currentNumber / 100) * firstNumber;
+    } else if (operator == "*" || operator == "/") {
+      currentNumber = currentNumber / 100;
+    }
+    output.innerHTML = currentNumber;
+  });
+}
+
 function clearAll() {
   currentNumber = "";
   firstNumber = "";
@@ -98,5 +114,7 @@ for (let i = 0, l = numbers.length; i < l; i++) {
 for (let i = 0, l = operators.length; i < l; i++) {
   operators[i].onclick = moveNum;
 }
+
 equal.onclick = displayNum;
+document.querySelector('[value="%"]').onclick = calcPercent;
 document.querySelector('[value="C"]').onclick = clearAll;

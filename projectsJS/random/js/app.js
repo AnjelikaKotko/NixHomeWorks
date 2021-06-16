@@ -8,9 +8,13 @@ btn.addEventListener("click", (e) => {
   e.preventDefault();
   let arrRandomNamber = [];
   function randomNumber(amoumt, min, max) {
-    for (let i = 0; i < amoumt; i++) {
-      let randomN = Math.floor(Math.random() * (max - min + 1)) + min;
-      arrRandomNamber.push(randomN);
+    if (min < max && amount > 0) {
+      for (let i = 0; i < amoumt; i++) {
+        let randomN = Math.floor(Math.random() * (max - min + 1)) + min;
+        arrRandomNamber.push(randomN);
+      }
+    } else {
+      arrRandomNamber.push("Не верные данные. Попробуйте еще");
     }
   }
   randomNumber(+amount.value, +min.value, +max.value);
